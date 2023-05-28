@@ -15,6 +15,10 @@ class LoginMain2Activity : AppCompatActivity() {
         val GoInvitado = findViewById<TextView>(R.id.Invitadotxt)
 
         GoInvitado.setOnClickListener {
+            GoInvitado.setOnClickListener {
+                val intent = Intent(this,MapsActivity::class.java)
+                startActivity(intent)
+            }
         }
 
         val GoRegistrar = findViewById<TextView>(R.id.Nocuentatxt)
